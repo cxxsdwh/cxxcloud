@@ -1,9 +1,9 @@
 #coding=utf-8
 import datetime
 
-cg = open('/var/www/html/frame.html', 'r')
+cg = open('frame.html','r')
 base = cg.read()
-Cg.close()
+cg.close()
 
 
 def time(str1):
