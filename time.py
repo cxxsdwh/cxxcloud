@@ -1,15 +1,15 @@
 #coding=utf-8
 import datetime
 
-with open('frame.html', 'r') as cg:
-    base = cg.read()
+cg = open('/var/www/html/frame.html', 'r')
+base = cg.read()
+Cg.close()
 
 
 def time(str1):
     disaster = datetime.datetime(2019,3,2,6,0)
     now =datetime.datetime.now()
     delt=round((disaster - now).total_seconds())
-    print(delt)
     d,hs = divmod(delt,86400)
     h,ms=divmod(hs,3600)
     m=round(ms/60)
